@@ -139,7 +139,6 @@ demog = demog.apply(determine_readmission,axis=1)
 #                    ADDITIONAL HELPER FUNCTIONS
 ########################################################################
 
-# is this an imputation function? need to go over this function in detail later, 后面再仔细看看
 def SAH(input, vitalslab_hold, adjust=0):
     '''Matthieu Komorowski - Imperial College London 2017 
     will copy a value in the rows below if the missing values are within the

@@ -1,0 +1,25 @@
+device: 'cpu'
+random_seed: 1234 # updated by run scripts
+folder_location: '/data'
+folder_name: '/combined' # updated by run scripts
+resume: False
+minibatch_size: 16
+drop_smaller_than_minibatch: True
+sided_Q: 'negative'  #Can be 'positive' or 'negative'
+perception_neg_traj_ratio: 'NA'
+
+state_dim: 33                      
+num_actions: 2
+context_dim: 5                     # Number of context/demographic/binary indicator variables we'll use as input
+
+
+# update these manually
+storage_path: '/home/yong/reinforcement-learning-for-sepsis'
+
+train_data_file: '/home/yong/reinforcement-learning-for-sepsis/data/train_set_tuples'
+validation_data_file: '/home/yong/reinforcement-learning-for-sepsis/data/val_set_tuples'
+test_data_file: '/home/yong/reinforcement-learning-for-sepsis/data/test_set_tuples'
+
+
+behav_policy_file_wDemo: '/home/yong/reinforcement-learning-for-sepsis/test/BC_model_wDemo.pt'
+behav_policy_file: '/home/yong/reinforcement-learning-for-sepsis/test/BC_model.pt'
